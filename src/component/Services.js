@@ -204,7 +204,7 @@ export default class Services extends Component {
               </Col>
               <Col lg={6} className=''>
                 <div className='mt-4'>
-                  <img src={Growth} height='330' alt='' />
+                  <img src={Growth} height='300' alt='' className='img' />
                 </div>
               </Col>
             </Row>

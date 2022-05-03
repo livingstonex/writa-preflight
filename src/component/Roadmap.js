@@ -13,7 +13,7 @@ export default class Roadmap extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className='section bg-services' id='services'>
+        <section className='mt-30' id='services'>
           <Container>
             <Row>
               <Col lg='12'>
@@ -25,11 +25,7 @@ export default class Roadmap extends Component {
             </Row>
             <Row className='pt-4'>
               <Col className='text-center'>
-                <img
-                  src={RoadmapImg}
-                  className='roadmap-img roadmamp-img-mobile'
-                  alt=''
-                />
+                <img src={RoadmapImg} className='img' alt='' />
               </Col>
             </Row>
           </Container>

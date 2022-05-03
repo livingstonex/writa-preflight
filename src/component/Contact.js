@@ -9,7 +9,7 @@ export default class Contact extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className='section' id='contact'>
+        <section className='mt-30' id='contact'>
           <Container>
             <Row>
               <Col lg={12}>
