@@ -38,11 +38,10 @@ const NotifyModal = (props) => {
         phone,
       };
 
-      console.log(payload);
-
       callApi('/api/v1/customers', payload, 'post')
         .then((res) => {
           setLoading(false);
+          props.toggle();
           return toast.success(
             'Your details have collected. You will be notified when we lunch.'
           );
@@ -128,8 +127,8 @@ const NotifyModal = (props) => {
             </Row>
           </Form>
         </div>
-        <Button block color='primary' onClick={onSubmit}>
-          Submit
+        <Button block color='primary' onClick={onSubmit} disabled={loading}>
+          Submit {loading ? <i class='fa fa-spinner fa-spin'></i> : ''}
         </Button>
       </ModalBody>
 
