@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <ToastContainer />
+        <ToastContainer hideProgressBar={true} />
         <Router>
           <Switch>
             {routes.map((route, idx) => (
