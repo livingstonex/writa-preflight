@@ -43,7 +43,7 @@ const NotifyModal = (props) => {
           setLoading(false);
           props.toggle();
           return toast.success(
-            'Your details have collected. You will be notified when we lunch.'
+            'Your details have been successfully collected. You will be notified when we lunch.'
           );
         })
         .catch((error) => {
