@@ -1964,6 +1964,10 @@ textarea.form-control {
   margin-top: 30px;
 }
 
+.mb-20 {
+  margin-bottom: 50px;
+}
+
 /* Custom Responsiveness */
 @media only screen and (max-width: 600px) {
 }
