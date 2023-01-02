@@ -3,8 +3,8 @@ import { Container, Row, Col, Modal } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 // Modal Video
-import ModalVideo from 'react-modal-video';
-import '../../../node_modules/react-modal-video/scss/modal-video.scss';
+// import ModalVideo from 'react-modal-video';
+// import '../../../node_modules/react-modal-video/scss/modal-video.scss';
 
 import HomeUrl from '../../assets/images/home-border.png';
 // import Img from '../../assets/images/features/img-2.png';
@@ -72,12 +72,12 @@ class Section extends Component {
                 </Row>
               </Container>
             </div>
-            <ModalVideo
+            {/* <ModalVideo
               channel='vimeo'
               isOpen={this.state.isOpen}
               videoId='99025203'
               onClose={() => this.setState({ isOpen: false })}
-            />
+            /> */}
           </div>
         </section>
       </React.Fragment>
