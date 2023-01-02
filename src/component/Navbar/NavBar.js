@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 // Import Logo
 import logodark from '../../assets/images/logo-dark.png';
 import logolight from '../../assets/images/logo-light.png';
+import wizardlogo from '../../assets/images/wizard_logo.png';
 
 import ScrollspyNav from './Scrollspy';
 
@@ -49,7 +50,8 @@ class NavbarPage extends Component {
               {this.props.imglight === true ? (
                 <img src={logolight} alt='' height='22' />
               ) : (
-                <img src={logodark} alt='' height='40' />
+                // <img src={logodark} alt='' height='40' />
+                <img src={wizardlogo} alt='' height='45' />
               )}
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle}>

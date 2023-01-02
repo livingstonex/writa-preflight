@@ -1968,6 +1968,10 @@ textarea.form-control {
   margin-bottom: 50px;
 }
 
+.font-13 {
+  font-size: 13px;
+}
+
 /* Custom Responsiveness */
 @media only screen and (max-width: 600px) {
 }

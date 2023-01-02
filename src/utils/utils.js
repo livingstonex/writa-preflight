@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const request = axios.create({
-  baseURL: 'https://writa-preflight-app.herokuapp.com/',
+  baseURL: 'http://localhost:9000/', // 'https://writa-preflight-app.herokuapp.com/',
   timeout: 120000, // 1 Minute
 });
 

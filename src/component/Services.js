@@ -187,19 +187,32 @@ export default class Services extends Component {
                 <div className='pr-4 mt-4'>
                   <p className='text-uppercase'>why choose us </p>
                   <h3>Stay ahead of the competition!</h3>
-                  <p className='text-muted mt-3'>
-                    Morbi at erat et tortor tempor sodales non eu lacus Donec at
-                    gravida nunc vitae volutpat libero fusce sit amet mi quis
-                    ipsum tempus gravida in quis felis Aliquam fringilla tempus
-                    scelerisque Phasellus viverra tincidunt suscipit. Praesent
-                    non arcu vitae augue aliquam eget vitae Pellentesque sem
-                    mauris porta eget ultrices eros.
+                  <p className='text-uppercase'>
+                    with our ai social media assistant & copilot{' '}
                   </p>
-                  <div className='mt-4 pt-1'>
+                  {/* <li className='text-muted font-13'>
+                    Autonomously engage customers with interesting posts.
+                  </li>
+                  <li className='text-muted font-13'>
+                    AI Managed engagement across your social platforms.
+                  </li>
+                  <li className='text-muted font-13'>
+                    Approve AI pre-generated content or give a passthrough.
+                  </li> */}
+                  <p className='text-muted mt-3'>
+                    Wizard A.I. is here to help you manage social media
+                    engagements better, create content faster and grow your
+                    business. <br/> You already know that writing is hard and takes a
+                    lot of time, and so is social media management. I'm sure you
+                    want to do more and become a highly productive entrepreneur.
+                    That's why we are excited to give you Wizzard-AI, your A.I
+                    social media manager and content generator.
+                  </p>
+                  {/* <div className='mt-4 pt-1'>
                     <Link to='#' className='btn btn-outline-primary'>
                       Discover More
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </Col>
               <Col lg={6} className=''>

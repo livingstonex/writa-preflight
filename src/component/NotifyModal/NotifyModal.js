@@ -16,43 +16,38 @@ import { toast } from 'react-toastify';
 import { callApi } from '../../utils/utils';
 
 const NotifyModal = (props) => {
-  const [firstname, setFirstName] = useState('');
-  const [lastname, setLastName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
   const [loading, setLoading] = useState(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    if (!firstname || !lastname || !email || !phone) {
-      return toast.error('Kindly fill in all fields please!');
+    if (!email) {
+      return toast.error('Please provide an email.');
     }
 
     try {
       setLoading(true);
 
-      const payload = {
-        firstname,
-        lastname,
-        email,
-        phone,
-      };
+      const payload = { email };
 
       callApi('/api/v1/customers', payload, 'post')
         .then((res) => {
           setLoading(false);
+          setEmail('');
           props.toggle();
           return toast.success(
-            'Your details have been successfully collected. You will be notified when we lunch.'
+            'Successfully submitted.'
           );
         })
         .catch((error) => {
           setLoading(false);
+          setEmail('');
           console.log('ERROR: ', error);
-          return toast.error('Error submitting details');
+          return toast.error(error.message || 'Error submitting details');
         });
     } catch (error) {
       setLoading(false);
+      setEmail('');
       return toast.warning('Check your internet.');
     }
   };
@@ -67,7 +62,7 @@ const NotifyModal = (props) => {
         <div className='custom-form mt-4'>
           <div id='message'></div>
           <Form method='post' name='contact-form' id='contact-form'>
-            <Row>
+            {/* <Row>
               <Col lg={6}>
                 <FormGroup className='mt-3'>
                   <Label className='contact-lable'>First Name</Label>
@@ -94,7 +89,7 @@ const NotifyModal = (props) => {
                   />
                 </FormGroup>
               </Col>
-            </Row>
+            </Row> */}
             <Row>
               <Col lg={12}>
                 <FormGroup className='mt-3'>
@@ -110,7 +105,7 @@ const NotifyModal = (props) => {
                 </FormGroup>
               </Col>
             </Row>
-            <Row>
+            {/* <Row>
               <Col lg={12}>
                 <FormGroup className='mt-3'>
                   <Label className='contact-lable'>Phone Number</Label>
@@ -124,7 +119,7 @@ const NotifyModal = (props) => {
                   />
                 </FormGroup>
               </Col>
-            </Row>
+            </Row> */}
           </Form>
         </div>
         <Button block color='primary' onClick={onSubmit} disabled={loading}>

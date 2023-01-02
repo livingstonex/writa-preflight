@@ -75,7 +75,7 @@ class Layout1 extends Component {
         <Services />
 
         {/* Importing Roadmap */}
-        <Roadmap />
+        {/* <Roadmap /> */}
 
         {/* Importing Contact Us */}
         <Contact />

@@ -69,7 +69,7 @@ const Contact = (props) => {
             <Col lg={12}>
               <div className='title-box text-center'>
                 <h3 className='title-heading mt-4'>
-                  Let's talk about everything!
+                  Request a Custom Feature!
                 </h3>
                 <p className='text-muted f-17 mt-3'>
                   Have ideas or features you might want us to build into this

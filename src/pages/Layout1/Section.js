@@ -40,7 +40,7 @@ class Section extends Component {
                         Possible
                       </h1>
                       <p className='text-muted mt-4 f-20'>
-                        Powered by Artificial Intelligence.
+                        Your AI social media assistant and copilot.
                       </p>
                       <div className='mt-4 pt-2'>
                         <Link
@@ -50,14 +50,14 @@ class Section extends Component {
                         >
                           Notify Me!
                         </Link>{' '}
-                        <Link
+                        {/* <Link
                           to='#'
                           className='video-play-icon text-dark'
                           onClick={this.openModal}
                         >
                           <i className='mdi mdi-play-circle-outline text-dark mr-2'></i>
                           Watch Demo Video
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </Col>
