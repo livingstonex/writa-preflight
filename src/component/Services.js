@@ -188,7 +188,7 @@ export default class Services extends Component {
                   <p className='text-uppercase'>why choose us </p>
                   <h3>Stay ahead of the competition!</h3>
                   <p className='text-uppercase'>
-                    with our ai social media assistant & copilot{' '}
+                    with our ai social media copilot{' '}
                   </p>
                   {/* <li className='text-muted font-13'>
                     Autonomously engage customers with interesting posts.
@@ -200,13 +200,13 @@ export default class Services extends Component {
                     Approve AI pre-generated content or give a passthrough.
                   </li> */}
                   <p className='text-muted mt-3'>
-                    Wizard A.I. is here to help you manage social media
+                    Bubly A.I. is here to help you manage social media
                     engagements better, create content faster and grow your
                     business. <br/> You already know that writing is hard and takes a
                     lot of time, and so is social media management. I'm sure you
-                    want to do more and become a highly productive entrepreneur.
-                    That's why we are excited to give you Wizzard-AI, your A.I
-                    social media manager and content generator.
+                    want to do more and become a highly productive entrepreneur. <br/>
+                    That's why we are excited to give you BublyAI, your A.I
+                    social media copilot and content generator.
                   </p>
                   {/* <div className='mt-4 pt-1'>
                     <Link to='#' className='btn btn-outline-primary'>

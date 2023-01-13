@@ -56,6 +56,7 @@ const NotifyModal = (props) => {
       isOpen={props.openNotifyModal}
       toggle={props.toggle}
       className='modal-outter-body'
+      size='md'
     >
       {/* <ModalHeader toggle={props.toggle}/> */}
       <ModalBody className='modal-inner-body'>
